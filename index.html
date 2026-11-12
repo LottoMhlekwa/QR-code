@@ -164,6 +164,41 @@
       text-transform: uppercase;
     }
     footer .heart { color: var(--rose); font-size: 18px; display: block; margin-bottom: 5px; }
+
+    .video-section {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      padding: 0 28px;
+      text-align: center;
+    }
+    .video-section p {
+      color: #62584f;
+      margin: 0 0 18px;
+      font-size: 16px;
+    }
+    .memorial-video {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      background: #211d1a;
+      border: 8px solid #fff;
+      outline: 1px solid rgba(177,138,80,.65);
+      box-shadow: 0 10px 30px rgba(52,45,40,.12);
+    }
+    .video-link {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 11px 22px;
+      color: #fff;
+      background: var(--rose);
+      text-decoration: none;
+      font: 600 12px/1.5 Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      transition: background .2s ease;
+    }
+    .video-link:hover { background: #895650; }
+
     @media (max-width: 600px) {
       .page { margin: 12px auto; width: calc(100% - 20px); }
       header { padding-top: 48px; }
@@ -206,6 +241,20 @@
         <div>Rested<strong>1 August 2020</strong></div>
         <div>Laid to rest<strong>8 August 2020</strong></div>
       </div>
+    </section>
+
+
+    <section class="video-section" aria-labelledby="memorial-video-title">
+      <div class="rule"><span>❦</span></div>
+      <h2 id="memorial-video-title">A Memory to Treasure</h2>
+      <p>A special video in loving memory of Khunjuzwa Sheila.</p>
+      <video class="memorial-video" controls preload="metadata" playsinline>
+        <source src="Video.mp4" type="video/mp4">
+        Your browser does not support HTML video. Please use the link below to play the video.
+      </video>
+      <a class="video-link" href="Video.mp4" target="_blank" rel="noopener">
+        ▶ Play video
+      </a>
     </section>
 
     <blockquote>
